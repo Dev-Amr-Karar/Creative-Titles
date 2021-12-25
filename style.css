@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	padding: 30px 15px;
+}
+
+h2 {
+	color: #333;
+	margin: 0 0 30px;
+}
+
+h3 {
+	margin: 0 0 30px;
+	padding-bottom: 20px;
+	position: relative;
+	border-bottom: 2px solid #ddd;
+	width: 200px;
+}
+
+h3::before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+}
+
+h3.circle::after {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	bottom: -8px;
+	left: 0;
+}
+
+h3.box::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	bottom: -5px;
+	left: 0;
+}
+
+h3.triangle-up::after {
+	content: "";
+	position: absolute;
+	clip-path: polygon(50% 40%, 100% 100%, 0% 100%);
+	width: 20px;
+	height: 15px;
+	bottom: -1px;
+	left: -1px;
+}
+
+h3.triangle-down::after {
+	content: "";
+	position: absolute;
+	clip-path: polygon(0 0, 50% 60%, 100% 0);
+	width: 20px;
+	height: 15px;
+	bottom: -16px;
+	left: -1px;
+}
+
+.blue {
+	color: #2c6ccf;
+}
+
+.blue::before,
+.blue::after {
+	background-color: #2c6ccf;
+}
+
+.red {
+	color: #cf2c2c;
+}
+
+.red::before,
+.red::after {
+	background-color: #cf2c2c;
+}
+
+.green {
+	color: #309e0e;
+}
+
+.green::before,
+.green::after {
+	background-color: #309e0e;
+}
+
+.brown {
+	color: #cd661a;
+}
+
+.brown::before,
+.brown::after {
+	background-color: #cd661a;
+}
